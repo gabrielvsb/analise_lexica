@@ -109,7 +109,7 @@ class Analisador:
 
     @staticmethod
     def cria_csv_token(dicio):
-        with open('teste.csv', mode='w', newline='') as csv_file:
+        with open('csv_token.csv', mode='w', newline='') as csv_file:
             fieldnames = ["Token", "Identificação", "Tamanho", "Posição"]
             writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
             writer.writeheader()
@@ -121,7 +121,7 @@ class Analisador:
 
     @staticmethod
     def cria_csv_simbolos(dicio):
-        with open('teste2.csv', mode='w', newline='') as csv_file:
+        with open('csv_simbolos.csv', mode='w', newline='') as csv_file:
             fieldnames = ["Index", "Simbolo"]
             writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
             writer.writeheader()
